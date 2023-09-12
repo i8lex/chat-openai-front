@@ -2,13 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 type AuthState = {
   token: string | null;
   isAuthenticated: boolean;
-  userId: string;
+  id: number | null;
 };
 
 const initialState: AuthState = {
   token: null,
   isAuthenticated: false,
-  userId: "",
+  id: null,
 };
 export const authSlice = createSlice({
   name: "auth",
@@ -17,12 +17,12 @@ export const authSlice = createSlice({
     loginSuccess: (state, action) => {
       state.token = action.payload.token;
       state.isAuthenticated = true;
-      state.userId = action.payload.userId;
+      state.id = action.payload.id;
     },
     logoutSuccess: (state) => {
       state.token = null;
       state.isAuthenticated = false;
-      state.userId = "";
+      state.id = null;
     },
   },
 });

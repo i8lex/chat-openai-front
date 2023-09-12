@@ -9,3 +9,17 @@ export type RootState = {
     messages: string[];
   };
 };
+
+export type Message = {
+  userId: string;
+  message: string;
+  response: {
+    role: string;
+    content: string;
+  };
+};
+export type ChatState = {
+  id: number;
+  userId: number;
+  messages: Message[];
+};
