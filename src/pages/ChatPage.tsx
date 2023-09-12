@@ -74,7 +74,6 @@ const ChatPage = () => {
       sx={{
         bgcolor: "#D8E1ED",
         height: "100vh",
-        // width: "100vh",
         display: "flex",
         justifyContent: "flex-end",
         overflow: "hidden",
@@ -86,13 +85,14 @@ const ChatPage = () => {
           [theme.breakpoints.between("xs", "md")]: {
             mt: "20px",
           },
+          ml: "44px",
           [theme.breakpoints.between("xs", "md")]: {
             ml: "16px",
           },
           [theme.breakpoints.between("xs", "sm")]: {
             display: "none",
           },
-          ml: "44px",
+
           width: "100%",
           maxWidth: "180px",
         }}
@@ -196,26 +196,28 @@ const ChatPage = () => {
           bgcolor: "#ffffff",
           position: "relative",
           mt: "42px",
-          ml: "45px",
-          [theme.breakpoints.between("xs", "md")]: {
+
+          [theme.breakpoints.between("xs", "sm")]: {
             mt: "20px",
           },
-          [theme.breakpoints.between("xs", "md")]: {
+          ml: "45px",
+          [theme.breakpoints.between("xs", "sm")]: {
             ml: "0",
           },
           width: "100%",
-          [theme.breakpoints.between("xs", "md")]: {
-            mt: "20px",
+          pt: "60px",
+          [theme.breakpoints.between("xs", "sm")]: {
+            pt: "20px",
           },
-          [theme.breakpoints.between("xs", "md")]: {
+          pb: "54px",
+          [theme.breakpoints.between("xs", "sm")]: {
             pb: "24px",
           },
-          [theme.breakpoints.between("xs", "md")]: {
-            px: "20px",
-          },
-          pt: "60px",
-          pb: "54px",
           px: "20px",
+          [theme.breakpoints.between("xs", "sm")]: {
+            px: "0",
+          },
+
           marginBottom: "42px",
           borderRadius: "40px",
           display: "flex",

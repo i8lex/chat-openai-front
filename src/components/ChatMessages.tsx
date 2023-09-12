@@ -44,16 +44,21 @@ export const ChatMessages: React.FC = () => {
                     px: "12px",
                   },
                   width: "100%",
-                  [theme.breakpoints.between("md", "lg")]: {
-                    maxWidth: "380px",
+
+                  [theme.breakpoints.between("md", "xl")]: {
+                    maxWidth: "680px",
                   },
                   [theme.breakpoints.between("xs", "md")]: {
                     maxWidth: "220px",
                   },
+                  [theme.breakpoints.between("md", "xl")]: {
+                    marginX: "40px",
+                  },
+                  [theme.breakpoints.between("xs", "md")]: {
+                    marginX: "16px",
+                  },
 
-                  maxWidth: "680px",
                   borderRadius: "40px",
-                  mx: "40px",
                 }}
               >
                 <Box
@@ -71,6 +76,9 @@ export const ChatMessages: React.FC = () => {
                   sx={{
                     fontWeight: 700,
                     fontSize: 16,
+                    [theme.breakpoints.between("xs", "md")]: {
+                      fontSize: 12,
+                    },
                     fontFamily: "Nunito",
                     color: "#000A10",
                   }}
@@ -92,16 +100,18 @@ export const ChatMessages: React.FC = () => {
                     px: "12px",
                   },
                   width: "100%",
+                  maxWidth: "680px",
                   [theme.breakpoints.between("md", "lg")]: {
                     maxWidth: "380px",
                   },
                   [theme.breakpoints.between("xs", "md")]: {
                     maxWidth: "220px",
                   },
-
-                  maxWidth: "680px",
                   borderRadius: "40px",
                   mx: "40px",
+                  [theme.breakpoints.between("xs", "md")]: {
+                    mx: "16px",
+                  },
                 }}
               >
                 <Box
@@ -119,6 +129,9 @@ export const ChatMessages: React.FC = () => {
                   sx={{
                     fontWeight: 700,
                     fontSize: 16,
+                    [theme.breakpoints.between("xs", "md")]: {
+                      fontSize: 12,
+                    },
                     fontFamily: "Nunito",
                     color: "#000A10",
                   }}
