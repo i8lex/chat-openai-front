@@ -35,29 +35,19 @@ export const ChatMessages: React.FC = () => {
                   alignSelf: "flex-end",
                   position: "relative",
                   bgcolor: "var(--accent-2, #FEE2C5)",
-                  py: "25px",
-                  [theme.breakpoints.between("xs", "md")]: {
+                  [theme.breakpoints.down("md")]: {
                     py: "12px",
-                  },
-                  px: "44px",
-                  [theme.breakpoints.between("xs", "md")]: {
                     px: "12px",
+                    maxWidth: "260px",
+                    mx: "16px",
+                    borderRadius: "10px",
                   },
+
+                  py: "25px",
+                  px: "44px",
                   width: "100%",
-
-                  [theme.breakpoints.between("md", "xl")]: {
-                    maxWidth: "680px",
-                  },
-                  [theme.breakpoints.between("xs", "md")]: {
-                    maxWidth: "220px",
-                  },
-                  [theme.breakpoints.between("md", "xl")]: {
-                    marginX: "40px",
-                  },
-                  [theme.breakpoints.between("xs", "md")]: {
-                    marginX: "16px",
-                  },
-
+                  maxWidth: "680px",
+                  mx: "40px",
                   borderRadius: "40px",
                 }}
               >
@@ -76,7 +66,7 @@ export const ChatMessages: React.FC = () => {
                   sx={{
                     fontWeight: 700,
                     fontSize: 16,
-                    [theme.breakpoints.between("xs", "md")]: {
+                    [theme.breakpoints.down("md")]: {
                       fontSize: 12,
                     },
                     fontFamily: "Nunito",
@@ -91,27 +81,20 @@ export const ChatMessages: React.FC = () => {
                   alignSelf: "flex-start",
                   position: "relative",
                   bgcolor: "var(--blue, #C4DDFF)",
-                  py: "25px",
-                  [theme.breakpoints.between("xs", "md")]: {
-                    py: "12px",
-                  },
                   px: "44px",
-                  [theme.breakpoints.between("xs", "md")]: {
+                  mx: "40px",
+                  [theme.breakpoints.down("md")]: {
                     px: "12px",
+                    mx: "16px",
+                    maxWidth: "260px",
+                    py: "12px",
+                    borderRadius: "10px",
                   },
+
+                  py: "25px",
                   width: "100%",
                   maxWidth: "680px",
-                  [theme.breakpoints.between("md", "lg")]: {
-                    maxWidth: "380px",
-                  },
-                  [theme.breakpoints.between("xs", "md")]: {
-                    maxWidth: "220px",
-                  },
                   borderRadius: "40px",
-                  mx: "40px",
-                  [theme.breakpoints.between("xs", "md")]: {
-                    mx: "16px",
-                  },
                 }}
               >
                 <Box
@@ -129,7 +112,7 @@ export const ChatMessages: React.FC = () => {
                   sx={{
                     fontWeight: 700,
                     fontSize: 16,
-                    [theme.breakpoints.between("xs", "md")]: {
+                    [theme.breakpoints.down("md")]: {
                       fontSize: 12,
                     },
                     fontFamily: "Nunito",

@@ -6,6 +6,7 @@ import { SendIcon } from "./svg/Send";
 import UnstyledLinkButton from "./Button";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import theme from "../theme";
 type ChatInputProps = {
   onSendMessage: (message: string, chatId?: number) => void;
   chatId?: number;
@@ -33,7 +34,15 @@ export const ChatInput: FC<ChatInputProps> = ({ onSendMessage, chatId }) => {
       spacing="12px"
       alignItems="start"
       justifyContent="start"
-      sx={{ width: "100%", maxWidth: "736px", mt: "24px" }}
+      justifySelf="end"
+      sx={{
+        width: "100%",
+        maxWidth: "736px",
+        [theme.breakpoints.down("lg")]: {
+          px: "16px",
+        },
+        mt: "24px",
+      }}
     >
       <Typography
         variant="h2"
